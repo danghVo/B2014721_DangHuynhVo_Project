@@ -9,8 +9,6 @@
 </template>
 
 <script>
-import { formToJSON } from 'axios';
-
 export default{
     props: ["todo", "addMode", "message"],
     emits: ["createToDo", "turnOffAddMode"],

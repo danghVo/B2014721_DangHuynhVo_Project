@@ -55,10 +55,9 @@ const router = createRouter({
       ],
       props: true
     },
-    {
-      path: "/emptyDateCard",
-      name: "emptyCardDate",
-      component: () => import("@/components/emptyDateCard.vue")
+    { path: '/:pathMatch(.*)*', 
+      name: 'NotFound', 
+      component: () => import("@/views/404NotFoundView.vue") 
     },
   ]
 })
