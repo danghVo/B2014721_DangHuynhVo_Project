@@ -84,4 +84,9 @@ nav {
     to {
         rotate: 360deg;
     }
-}</style>
+}
+
+.navbar-brand{
+    margin: 0 auto;
+}
+</style>
