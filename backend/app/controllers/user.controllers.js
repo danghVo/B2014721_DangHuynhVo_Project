@@ -8,7 +8,7 @@ exports.createUser = async (req, res, next) => {
         const user = await userService.create(req.body);
         if(user)
             return res.send({message: "Creating account successfully"})
-        return next(new ApiError(400, "Account has already created"))
+        return next(new ApiError(400, "Account has already been created"))
     }
     catch (err){
         return next(new ApiError(500, "An error occur while creating an account"))
